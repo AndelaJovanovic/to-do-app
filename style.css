@@ -25,6 +25,7 @@ body {
      justify-content: center;
  }
 
+ /* FORM */
  form input {
      padding: 5px;
      font-size: 16px;
@@ -51,3 +52,37 @@ body {
      cursor: pointer;
      color: rgba(255, 255, 255, 0.767);
  }
+/* TODO CONTAINER */
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list {
+    min-width: 40%;
+    list-style: none;
+}
+.todo li {
+    flex: 1;
+}
+.todo {
+    margin: 10px;
+    background-color: #fafafa;
+    font-size: 17px;
+    color: #222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+}
+.completed-button, .eliminate-button {
+    background-color: thistle;
+    border:none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    text-transform: uppercase;
+} 
+.eliminate-button {
+    background-color: rgb(115, 162, 223);
+}
