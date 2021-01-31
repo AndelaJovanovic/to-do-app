@@ -30,6 +30,7 @@ body {
  form input {
      padding: 5px;
      font-size: 16px;
+     margin: 8px;
      border: 2px solid #fafafa;
      border-radius: 5px;
  }
