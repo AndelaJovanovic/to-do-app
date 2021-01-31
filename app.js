@@ -59,25 +59,28 @@ if(item.classList[0] === 'completed-button'){
 }
 }
 
-function filterTodo(e){
-    const todos = todoList.childNodes
+//FILTER ALL TASKS IN 3 CATEGORIES
+function filterTodo(e) {
+    const todos = todoList.childNodes;
     todos.forEach(function(todo) {
-        switch(e.target.value){
-            case "all":
-                todo.style.display = 'flex'
-                break;
-                case "completed":
-                if(todo.classList.contains('completed')){
-                    todo.style.display='flex'
-                } else {
-                    todo.style.display = 'none'
-                }
-            case 'undone':
-                if(!todo.classList.contains('completed')){
-                    todo.style.display = 'flex'
-                } else {
-                    todo.style.display = 'none'
-                }
-        }
-    })
-}
+      switch (e.target.value) {
+        case "all":
+          todo.style.display = "flex";
+          break;
+        case "completed":
+          if (todo.classList.contains("completed")) {
+            todo.style.display = "flex";
+          } else {
+            todo.style.display = "none";
+          }
+          break;
+        case "undone":
+          if (!todo.classList.contains("completed")) {
+            todo.style.display = "flex";
+          } else {
+            todo.style.display = "none";
+          }
+          break;
+      }
+    });
+  }
