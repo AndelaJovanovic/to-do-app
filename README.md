@@ -4,3 +4,5 @@ This app provides the posibility to add tasks, mark them as complete as well as 
 
 I did also implement filtering through 3 categories however, there seems to be a slight bug there as the filtering does not perform as hoped for.
 I have also found some sources on localStorage() which I would have liked to implement on the next project that perhaps requires a more in-depth skills.
+
+Link to my deployed project on GitHub Pages: https://andelajovanovic.github.io/to-do-app/
