@@ -99,3 +99,6 @@ body {
     background-color: rgba(185, 184, 209, 0.562);
     cursor: pointer;
 }
+.fa-trash-alt, .fa-check {
+    pointer-events: none;
+}
