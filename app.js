@@ -41,6 +41,7 @@ function addTodo (e){
 function deleteTodo(e){
     const item =e.target
     if(item.classList[0] === 'eliminate-button'){
-        item.remove()
+       const todo = item.parentElement
+       todo.remove()
     }
 }
