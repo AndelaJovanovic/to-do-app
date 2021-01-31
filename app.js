@@ -2,7 +2,9 @@ const todoInput = document.querySelector('.todo-input')
 const todoButton = document.querySelector('.todo-button')
 const todoList = document.querySelector('.todo-list')
 
+// ALL EVENT LISTENERS
 todoButton.addEventListener('click', addTodo)
+todoList.addEventListener('click', deleteTodo)
 
 function addTodo (e){
     e.preventDefault()
@@ -30,4 +32,15 @@ function addTodo (e){
 
      //ADD TO LIST
      todoList.appendChild(todoContainer)
+
+     //CLEAR INPUT AFTER TASK HAS BEEN ADDED
+     todoInput.value = ""
+}
+
+//DELETE FUNCTION FOR TODOS
+function deleteTodo(e){
+    const item =e.target
+    if(item.classList[0] === 'eliminate-button'){
+        todoInput.remove()
+    }
 }

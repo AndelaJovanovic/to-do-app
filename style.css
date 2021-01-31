@@ -76,6 +76,9 @@ body {
     align-items: center;
     transition: ease-in-out 0.3s;
 }
+.todo-item {
+    padding: 8px;
+}
 .completed-button, .eliminate-button {
     background-color: thistle;
     padding: 12px;
