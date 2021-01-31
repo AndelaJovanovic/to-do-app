@@ -102,3 +102,11 @@ body {
 .fa-trash-alt, .fa-check {
     pointer-events: none;
 }
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.bye-task {
+    transform: translate(10px) rotateZ(20deg);
+    opacity:0;
+}

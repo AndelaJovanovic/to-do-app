@@ -39,9 +39,18 @@ function addTodo (e){
 
 //DELETE FUNCTION FOR TODOS
 function deleteTodo(e){
-    const item =e.target
+    const item = e.target
     if(item.classList[0] === 'eliminate-button'){
        const todo = item.parentElement
-       todo.remove()
+       todo.classList.add("bye-task")
+       todo.addEventListener('transitioned', function(){
+           todo.remove()
+       })
     }
+}
+
+// MARK TODOS AS COMPLETED
+if(item.classList[0] === 'completed-button'){
+    const todo = item.parentElement
+    todo.classList.toggle("done")
 }
