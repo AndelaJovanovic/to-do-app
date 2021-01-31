@@ -12,19 +12,19 @@ function addTodo (e){
     todoContainer.classList.add('todo')
 
     const addTodo = document.createElement('li')
-    addTodo.innerText = 'hello, task'
+    addTodo.innerText = todoInput.value
     addTodo.classList.add('todo-item')
     todoContainer.appendChild(addTodo)
 
     // COMPLETED BUTTON
     const completed = document.createElement('button')
-    completed.innerHTML = 'i am a button'
+    completed.innerHTML = '<i class="fas fa-check"></i>'
     completed.classList.add("completed-button")
     todoContainer.appendChild(completed)
 
      // ELIMINATE BUTTON
      const eliminate = document.createElement('button')
-     eliminate.innerHTML = 'i am a button'
+     eliminate.innerHTML = '<i class="far fa-trash-alt"></i>'
      eliminate.classList.add("eliminate-button")
      todoContainer.appendChild(eliminate)
 

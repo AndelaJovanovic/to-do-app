@@ -9,7 +9,7 @@
 body {
     min-height: 100vh;
     font-family: 'Inconsolata', monospace;
-    color: rgba(60, 7, 252, 0.658);
+    color: rgb(244, 242, 248);
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
@@ -23,13 +23,14 @@ body {
      margin-top: 10px;
      display: flex;
      justify-content: center;
+     letter-spacing: 5px;
  }
 
  /* FORM */
  form input {
      padding: 5px;
      font-size: 16px;
-     border: 2px solid rgba(60, 7, 252, 0.658);
+     border: 2px solid #fafafa;
      border-radius: 5px;
  }
  form button {
@@ -38,7 +39,7 @@ body {
     margin: 10px;
     text-decoration: none;
     border: 2px solid rgb(255, 255, 255);
-    background-color: orchid;
+    background-color: thistle;
  }
  form button:hover {
     cursor: pointer;
@@ -77,12 +78,21 @@ body {
 }
 .completed-button, .eliminate-button {
     background-color: thistle;
-    border:none;
-    padding: 5px;
+    padding: 12px;
+    border: none;
     cursor: pointer;
     font-size: 10px;
     text-transform: uppercase;
 } 
 .eliminate-button {
     background-color: rgb(115, 162, 223);
+}
+.completed-button:hover {
+    background-color: rgba(216, 191, 216, 0.562);
+    cursor: pointer;
+}
+
+.eliminate-button:hover {
+    background-color: rgba(185, 184, 209, 0.562);
+    cursor: pointer;
 }
