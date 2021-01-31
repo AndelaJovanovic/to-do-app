@@ -34,7 +34,7 @@ body {
      border-radius: 5px;
  }
  form button {
-    border-radius: 50px;
+    border-radius: 80px;
     padding: 10px;
     margin: 10px;
     text-decoration: none;
@@ -110,3 +110,45 @@ body {
     transform: translate(10px) rotateZ(20deg);
     opacity:0;
 }
+/*ALL 3 SELECTORS */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+  }
+  
+  /* CUSTOM SELECTORS */
+  .select {
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  select {
+    color: #6e2340;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 130px;
+    padding: 10px;
+  }
+  /* STYLE THE ARROW */
+.select::after {
+    content: "\25BC";
+    /* Source for content property in CSS:  https://www.toptal.com/designers/htmlarrows/*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    margin: auto;
+    background: #ad6ead;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+ 
